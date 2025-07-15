@@ -49,7 +49,7 @@ function Products() {
                 setProducts(history);
             } else {
                 try {
-                    const response = await fetch('http://localhost:5000/api/products');
+                    const response = await fetch('https://edu-platform-3qfk.onrender.com/api/products');
                     if (!response.ok) {
                         toast.error('Lỗi tải dữ liệu sản phẩm');
                         throw new Error('Lỗi khi lấy dữ liệu sản phẩm');

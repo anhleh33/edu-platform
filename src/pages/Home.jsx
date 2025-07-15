@@ -24,7 +24,7 @@ function Home() {
     useEffect(() => {
         async function fetchTeachers() {
             try {
-                const response = await fetch('http://localhost:5000/api/teachers');
+                const response = await fetch('https://edu-platform-3qfk.onrender.com/api/teachers');
                 if (!response.ok) throw new Error();
                 const data = await response.json();
                 setTeachers(data);
@@ -38,7 +38,7 @@ function Home() {
     useEffect(() => {
         async function fetchSuggestion() {
             try {
-                const response = await fetch('http://localhost:5000/api/suggestion');
+                const response = await fetch('https://edu-platform-3qfk.onrender.com/api/suggestion');
                 if (!response.ok) throw new Error();
                 const data = await response.json();
                 setSuggestions(data);

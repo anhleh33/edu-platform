@@ -12,7 +12,7 @@ function Login() {
   e.preventDefault();
 
   try {
-    const response = await fetch('http://localhost:5000/api/users');
+    const response = await fetch('https://edu-platform-3qfk.onrender.com/api/users');
     if (!response.ok) {
       toast.error('Không thể truy cập dữ liệu người dùng!');
       return;
