@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "title": "Khoá học IELTS 8.0 cùng giảng viên bản xứ",
+    "price": 1250000,
+    "image": "https://tse4.mm.bing.net/th/id/OIP.gaBCGZA9v5_OLOCr0kqPAgHaE8",
+    "shortDesc": "Luyện thi IELTS cấp tốc với giáo viên bản xứ. Đảm bảo tăng 1.0 band sau 8 tuần.",
+    "fullDesc": "Khoá học kéo dài 8 tuần, tập trung kỹ năng Speaking & Writing. Giáo trình Cambridge, bài giảng video + 1:1 cùng giáo viên bản xứ.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 2,
+    "title": "Tiếng Anh giao tiếp cho người đi làm",
+    "price": 1590000,
+    "image": "https://tse3.mm.bing.net/th/id/OIP._K0XVP7pJaZgdM0pRdzj2AHaD4",
+    "shortDesc": "Tự tin giao tiếp trong môi trường công sở chỉ sau 6 tuần.",
+    "fullDesc": "Khoá học dành riêng cho người bận rộn. Video 1:1 tương tác, chủ đề công sở, hội thoại email, thuyết trình.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 3,
+    "title": "Sách luyện TOEIC – Reading & Listening",
+    "price": 350000,
+    "image": "https://haloenglish.edu.vn/wp-content/uploads/2020/09/ABC-TOEIC-danh-cho-nguoi-bat-dau-1024x723.jpg",
+    "shortDesc": "Tài liệu luyện đề TOEIC mới nhất, có đáp án và phân tích chi tiết.",
+    "fullDesc": "Bộ tài liệu PDF + video giải thích kỹ từng dạng câu hỏi, phù hợp cho học viên từ 400+ đến mục tiêu 800+ TOEIC.",
+    "category": "Tài liệu"
+  },
+  {
+    "id": 4,
+    "title": "Giao tiếp tiếng Anh qua phim ảnh",
+    "price": 720000,
+    "image": "https://vietgle.vn/wp-content/uploads/2021/08/hoc-tieng-anh-qua-phim.png",
+    "shortDesc": "Học tiếng Anh thực tế qua các bộ phim nổi tiếng.",
+    "fullDesc": "Khoá học giúp cải thiện khả năng nghe – nói – phản xạ với video clip từ các phim Hollywood. Có phụ đề tương tác & phân tích câu thoại.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 5,
+    "title": "ChatGPT cho học sinh – học hiệu quả bằng AI",
+    "price": 0,
+    "image": "https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/2/6/1144790/Chatgpt-2.jpg",
+    "shortDesc": "Hướng dẫn học sinh sử dụng ChatGPT để học tốt hơn và an toàn hơn.",
+    "fullDesc": "Miễn phí. Khoá học hướng dẫn học sinh tra cứu kiến thức, ôn tập, luyện nói tiếng Anh qua AI một cách đúng đắn.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 6,
+    "title": "Tài liệu học ngữ pháp tiếng Anh từ cơ bản đến nâng cao",
+    "price": 290000,
+    "image": "https://englishwithselena.com/wp-content/uploads/2023/03/Ngu-phap.jpg",
+    "shortDesc": "Tài liệu PDF 150 trang + bài tập tự luyện + đáp án chi tiết.",
+    "fullDesc": "Sách ngữ pháp đầy đủ các chủ đề: thì động từ, mệnh đề quan hệ, bị động, câu điều kiện... Có bài tập luyện tập theo từng phần.",
+    "category": "Tài liệu"
+  },
+  {
+    "id": 7,
+    "title": "Khoá học phát âm chuẩn Mỹ – Master Pronunciation",
+    "price": 890000,
+    "image": "https://th.bing.com/th/id/R.63a420a03d8fb5234579685d3b23fb95?rik=IYgNoZNk5QaWxQ&pid=ImgRaw&r=0",
+    "shortDesc": "Phát âm chuẩn Mỹ với kỹ thuật IPA, chỉnh sửa giọng nói, ngữ điệu.",
+    "fullDesc": "Khoá học cung cấp hơn 100 video thực hành + feedback từ giảng viên. Thích hợp cho học sinh muốn luyện phát âm, chuẩn hoá giọng nói.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 8,
+    "title": "Combo Flashcard 1000 từ vựng TOEIC kèm App học",
+    "price": 180000,
+    "image": "https://tse3.mm.bing.net/th/id/OIP.vPGJV75IX_Qv9g7VZ5EYgQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "shortDesc": "Thẻ học TOEIC theo chủ đề + App luyện thi miễn phí.",
+    "fullDesc": "Gồm 1000 từ vựng phân theo chủ đề công việc, văn phòng, email... kèm app di động để ôn tập mọi lúc mọi nơi.",
+    "category": "Tài liệu"
+  },
+  {
+    "id": 9,
+    "title": "Luyện nói tiếng Anh với AI – Mô phỏng hội thoại thực tế",
+    "price": 540000,
+    "image": "https://cdn-media.sforum.vn/storage/app/media/gliglish-ai-thumb.jpg",
+    "shortDesc": "Luyện nói tiếng Anh tự nhiên qua hệ thống AI phản hồi thông minh.",
+    "fullDesc": "Ứng dụng AI để luyện nói các tình huống giao tiếp hàng ngày. Ghi âm + phản hồi phát âm và ngữ pháp tức thì.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 10,
+    "title": "Giáo trình tiếng Anh trẻ em – English for Kids (PDF + Audio)",
+    "price": 300000,
+    "image": "https://mamnonmidung.com/wp-content/uploads/2023/10/amazing-science-1.png",
+    "shortDesc": "Bộ sách PDF màu + file nghe + bài tập tương tác cho bé từ 5–10 tuổi.",
+    "fullDesc": "Chương trình học tiếng Anh cho trẻ em theo chuẩn CEFR, có trò chơi, hình ảnh, video minh hoạ sống động, giúp bé học vui và hiệu quả.",
+    "category": "Tài liệu"
+  },
+  {
+    "id": 11,
+    "title": "Khóa học tiếng Hàn giao tiếp cơ bản",
+    "price": 550000,
+    "image": "https://th.bing.com/th/id/R.16af35f615ac1ed93b1f335431c7dd4f?rik=Rm6ANzh2fjqyaw&pid=ImgRaw&r=0",
+    "shortDesc": "Bắt đầu học tiếng Hàn giao tiếp từ những câu cơ bản nhất.",
+    "fullDesc": "Khóa học tập trung vào phát âm, ngữ pháp cơ bản và hội thoại giao tiếp thực tế.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 12,
+    "title": "Tài liệu luyện thi JLPT N5",
+    "price": 250000,
+    "image": "https://tse4.mm.bing.net/th/id/OIP.gtU5rpRY8W7-fQ56GoZSSAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "shortDesc": "Tài liệu luyện thi tiếng Nhật cấp độ N5 với đề thi mẫu và giải thích chi tiết.",
+    "fullDesc": "Bao gồm đề thi thử, từ vựng, ngữ pháp và bài tập thực hành dành cho người mới bắt đầu.",
+    "category": "Tài liệu"
+  },
+  {
+    "id": 13,
+    "title": "Khóa học tiếng Trung phổ thông cho người mới bắt đầu",
+    "price": 600000,
+    "image": "https://th.bing.com/th/id/R.595b87761edd84a404695d3fe123027d?rik=jf9sXSjFtDz6Lw&pid=ImgRaw&r=0",
+    "shortDesc": "Khóa học học tiếng Trung từ phát âm đến giao tiếp cơ bản.",
+    "fullDesc": "Học viên được tiếp cận với bài học video, bài tập tương tác và luyện nói trực tiếp.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 14,
+    "title": "Sách ngữ pháp tiếng Pháp nâng cao",
+    "price": 350000,
+    "image": "https://tse1.mm.bing.net/th/id/OIP.J_ys3ZUmA5u4xJOa4JqyzQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "shortDesc": "Sách ngữ pháp tiếng Pháp dành cho trình độ trung cấp và cao cấp.",
+    "fullDesc": "Chi tiết các cấu trúc ngữ pháp, bài tập nâng cao và giải thích rõ ràng.",
+    "category": "Tài liệu"
+  },
+  {
+    "id": 15,
+    "title": "Khóa học tiếng Tây Ban Nha cho người bận rộn",
+    "price": 700000,
+    "image": "https://tse4.mm.bing.net/th/id/OIP.wFSsUYF6klaKFsj9l1jMdgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "shortDesc": "Khóa học ngắn hạn dành cho người có ít thời gian học tiếng Tây Ban Nha.",
+    "fullDesc": "Lộ trình học 6 tuần, tập trung phát âm và giao tiếp nhanh trong công việc.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 16,
+    "title": "Flashcard 2000 từ vựng tiếng Anh theo chủ đề",
+    "price": 150000,
+    "image": "https://cdn.chanhtuoi.com/uploads/2022/11/flashcard-tieng-anh-5.jpg",
+    "shortDesc": "Bộ flashcard với 2000 từ vựng tiếng Anh phân theo chủ đề giúp ghi nhớ nhanh.",
+    "fullDesc": "Kèm app di động, luyện tập theo nhiều chế độ: học mới, ôn tập, kiểm tra.",
+    "category": "Tài liệu"
+  },
+  {
+    "id": 17,
+    "title": "Khóa học luyện nghe tiếng Anh qua Podcast",
+    "price": 500000,
+    "image": "https://onthiielts.com.vn/wp-content/uploads/2022/11/cach-luyen-nghe-bang-podcast.jpg",
+    "shortDesc": "Luyện kỹ năng nghe và phản xạ tiếng Anh qua các đoạn podcast đa chủ đề.",
+    "fullDesc": "Bài tập nghe kết hợp với transcript và bài kiểm tra mỗi tuần.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 18,
+    "title": "Sách luyện phát âm tiếng Đức chuẩn",
+    "price": 280000,
+    "image": "https://tse3.mm.bing.net/th/id/OIP.e0TjZazAszgxomm0EUBI6wHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "shortDesc": "Sách hướng dẫn luyện phát âm tiếng Đức với các kỹ thuật chuẩn và bài tập thực hành.",
+    "fullDesc": "Bao gồm các bài tập nghe, nói và chỉnh sửa lỗi phát âm thường gặp.",
+    "category": "Tài liệu"
+  },
+  {
+    "id": 19,
+    "title": "Khóa học tiếng Ả Rập cơ bản",
+    "price": 650000,
+    "image": "https://tse4.mm.bing.net/th/id/OIP.HSNMOGa5ztoXbPByRigA7gHaDk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "shortDesc": "Khóa học giúp học viên làm quen với bảng chữ cái và giao tiếp cơ bản tiếng Ả Rập.",
+    "fullDesc": "Bao gồm video bài giảng, bài tập luyện tập và hội thoại mẫu.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 20,
+    "title": "Tài liệu luyện thi TOEFL nâng cao",
+    "price": 400000,
+    "image": "https://lalabookshop.com/wp-content/uploads/2021/05/768x512-cac-bai-luyen-thi-toefl-junior-1.jpeg",
+    "shortDesc": "Tài liệu luyện thi TOEFL gồm đề thi mẫu, bài giải và các mẹo làm bài hiệu quả.",
+    "fullDesc": "Phù hợp với học viên muốn nâng cao điểm TOEFL lên trên 100.",
+    "category": "Tài liệu"
+  },
+  {
+    "id": 21,
+    "title": "Tài liệu luyện thi TOEFL cơ bản",
+    "price": 400000,
+    "image": "https://tse3.mm.bing.net/th/id/OIP.9VhNeO8yqLTnVw7f8AWPJAHaER?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "shortDesc": "Tài liệu luyện thi TOEFL gồm đề thi mẫu, bài giải và các mẹo làm bài hiệu quả.",
+    "fullDesc": "Phù hợp với học viên mới bắt đầu.",
+    "category": "Tài liệu"
+  }
+]

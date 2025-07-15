@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Khoá học IELTS 8.0 cùng giảng viên bản xứ",
+    "price": 1250000,
+    "image": "https://tse4.mm.bing.net/th/id/OIP.gaBCGZA9v5_OLOCr0kqPAgHaE8",
+    "shortDesc": "Luyện thi IELTS cấp tốc với giáo viên bản xứ. Đảm bảo tăng 1.0 band sau 8 tuần.",
+    "fullDesc": "Khoá học kéo dài 8 tuần, tập trung kỹ năng Speaking & Writing. Giáo trình Cambridge, bài giảng video + 1:1 cùng giáo viên bản xứ.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 2,
+    "title": "Tiếng Anh giao tiếp cho người đi làm",
+    "price": 1590000,
+    "image": "https://tse3.mm.bing.net/th/id/OIP._K0XVP7pJaZgdM0pRdzj2AHaD4",
+    "shortDesc": "Tự tin giao tiếp trong môi trường công sở chỉ sau 6 tuần.",
+    "fullDesc": "Khoá học dành riêng cho người bận rộn. Video 1:1 tương tác, chủ đề công sở, hội thoại email, thuyết trình.",
+    "category": "Khóa học"
+  },
+  {
+    "id": 3,
+    "title": "Sách luyện TOEIC – Reading & Listening",
+    "price": 350000,
+    "image": "https://haloenglish.edu.vn/wp-content/uploads/2020/09/ABC-TOEIC-danh-cho-nguoi-bat-dau-1024x723.jpg",
+    "shortDesc": "Tài liệu luyện đề TOEIC mới nhất, có đáp án và phân tích chi tiết.",
+    "fullDesc": "Bộ tài liệu PDF + video giải thích kỹ từng dạng câu hỏi, phù hợp cho học viên từ 400+ đến mục tiêu 800+ TOEIC.",
+    "category": "Tài liệu"
+  }
+]
