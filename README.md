@@ -1,11 +1,11 @@
 # ReactJS Language Learning Website
 
 ## 👩‍🎓 Candidate
-Name: Lê Hoàng Anh
+<b>Name</b>: Lê Hoàng Anh
 
-School: Ho Chi Minh City University of Education
+<b>School</b>: Ho Chi Minh City University of Education
 
-Role: Frontend Intern
+<b>Role</b>: Frontend Intern
 
 
 
@@ -24,3 +24,5 @@ npm run dev
 ```
 
 Then open your browser at: http://localhost:5173
+
+- For testing the web, you can open <b>mockUsers.json</b> and choose one of accounts to sign in.
