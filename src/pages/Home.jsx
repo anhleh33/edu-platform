@@ -7,6 +7,7 @@ import lessonImg from '../assets/lesson.png';
 import groupImg from '../assets/group.png';
 import materialImg from '../assets/materials.png';
 import background from '../assets/background.png';
+import loadingTree from '../assets/loadingtree.png'
 import InfoCard from '../components/InfoCard';
 import OfferCard from '../components/OfferCard';
 import SuggestionModal from '../components/SuggestionModal';
@@ -20,16 +21,22 @@ function Home() {
     const [showSuggestionModal, setShowSuggestionModal] = useState(false);
     const [teachers, setTeachers] = useState([]);
     const [suggestions, setSuggestions] = useState([]);
+    const [loadingTeachers, setLoadingTeachers] = useState(false);
+    const [loadingSuggestions, setLoadingSuggestions] = useState(false);
 
     useEffect(() => {
         async function fetchTeachers() {
             try {
+                setLoadingTeachers(true);
                 const response = await fetch('https://edu-platform-3qfk.onrender.com/api/teachers');
                 if (!response.ok) throw new Error();
                 const data = await response.json();
                 setTeachers(data);
             } catch (error) {
                 toast.error('Lỗi tải dữ liệu giáo viên');
+            }
+            finally {
+                setLoadingTeachers(false);
             }
         }
         fetchTeachers();
@@ -38,12 +45,16 @@ function Home() {
     useEffect(() => {
         async function fetchSuggestion() {
             try {
+                setLoadingSuggestions(true);
                 const response = await fetch('https://edu-platform-3qfk.onrender.com/api/suggestion');
                 if (!response.ok) throw new Error();
                 const data = await response.json();
                 setSuggestions(data);
             } catch (error) {
                 toast.error('Lỗi tải dữ liệu suggestion');
+            }
+            finally {
+                setLoadingSuggestions(false);
             }
         }
         fetchSuggestion();
@@ -88,7 +99,7 @@ function Home() {
                         title="Đề xuất sản phẩm"
                         description="Chúng tôi đề xuất những nội dung phù hợp nhất với phong cách học tập và mục tiêu của bạn."
                         linkText="Xem đề xuất cá nhân hóa"
-                        onClick={() => setShowSuggestionModal(true)} 
+                        onClick={() => setShowSuggestionModal(true)}
                     />
 
                     <OfferCard
@@ -116,16 +127,24 @@ function Home() {
 
             <section className="teachers">
                 <h2 className="teachers-title">Giáo viên nổi bật</h2>
-                <div className="teacher-row scroll-left">
-                    {[...teachers, ...teachers].map((teacher, index) => (
-                        <TeacherCard key={`${teacher.id || index}`} teacher={teacher} />
-                    ))}
-                </div>
-                <div className="teacher-row scroll-right">
-                    {[...teachers, ...teachers].map((teacher, index) => (
-                        <TeacherCard key={`${teacher.id || index}`} teacher={teacher} />
-                    ))}
-                </div>
+                {loadingTeachers ? (
+                    <div className="loading-spinner" style={{marginTop: '80px'}}>
+                        <img src={loadingTree} alt="" />
+                    </div>
+                ) : (
+                    <>
+                        <div className="teacher-row scroll-left">
+                            {[...teachers, ...teachers].map((teacher, index) => (
+                                <TeacherCard key={`${teacher.id || index}`} teacher={teacher} />
+                            ))}
+                        </div>
+                        <div className="teacher-row scroll-right">
+                            {[...teachers, ...teachers].map((teacher, index) => (
+                                <TeacherCard key={`${teacher.id || index}`} teacher={teacher} />
+                            ))}
+                        </div>
+                    </>
+                )}
             </section>
 
             <section className="information">

@@ -409,11 +409,49 @@ nav a {
   color: white;
 }
 
+.loading-spinner {
+  display: flex;
+  position: absolute;
+  justify-self: center;
+  width: 7%;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius) !important;
+  height: 25px;
+  animation: colorCycle 5s infinite linear;
+}
+
+@keyframes colorCycle {
+  0% {
+    background-color: #b9fbc0;
+    border-radius: (var(--border-radius));
+  }
+
+  50% {
+    background-color: #008000;
+    border-radius: (var(--border-radius));
+  }
+
+  100% {
+    background-color: #b9fbc0;
+    border-radius: (var(--border-radius));
+  }
+}
+
+
+.loading-spinner img {
+  position: absolute;
+  height: 150px;
+  bottom: -20px;
+}
+
 .teachers {
-  padding: 40px 0;
+  padding: 30px 0;
   background: #f9fafb;
   overflow: hidden;
   position: relative;
+  height: 500px;
 }
 
 .teachers-title {
@@ -563,6 +601,7 @@ nav a {
 }
 
 .product-part {
+  position: relative;
   display: flex;
   background-color: var(--color-active);
   background-image: url('assets/probackground.png');
@@ -570,6 +609,7 @@ nav a {
 }
 
 .products-container {
+  position: relative;
   background-image: url('assets/probackground.png');
   margin-top: 80px;
   display: list-item;
@@ -578,14 +618,16 @@ nav a {
 }
 
 .products-content {
+  position: relative;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  justify-self: center;
   list-style: none;
   background-color: var(--color-background);
-  margin: 30px 0;
+  margin: 30px ;
   border-radius: 20px;
   padding: 20px;
+  padding-bottom: 80px;
+  height: fit-content;
 }
 
 
@@ -616,7 +658,7 @@ nav a {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 20px;
 }
 
@@ -844,11 +886,11 @@ nav a {
   margin-top: 20px;
 }
 
-.modal-content h2{
+.modal-content h2 {
   font-size: 27px;
 }
 
-.modal-content p{
+.modal-content p {
   width: 100%;
 }
 
@@ -871,14 +913,14 @@ nav a {
   animation: fadeIn 0.3s ease;
 }
 
-.modal-header{
+.modal-header {
   font-size: 26px;
   margin-top: 0px;
   margin-left: 10px;
   color: var(--color-primary);
 }
 
-.modal-body{
+.modal-body {
   margin-left: 10px;
   margin-bottom: 10px;
 }
@@ -1267,4 +1309,388 @@ nav a {
   background-color: #d9363ed0;
   color: #fff;
   border: 1px solid #d9363ed0;
+}
+
+/* Base responsive adjustments */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Header responsiveness */
+header {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+}
+
+.logo-img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-img {
+    height: 40px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-item {
+    padding: 10px 15px;
+  }
+
+  .intro {
+    padding: 40px 5%;
+    height: auto;
+    text-align: center;
+  }
+
+  .intro-content {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro p {
+    font-size: 1.1rem;
+  }
+
+  .intro img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+  }
+}
+
+/* Offers section responsiveness */
+.offer-items {
+  gap: 20px;
+}
+
+.offer-card {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .offer-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Teachers section responsiveness */
+.teachers {
+  height: 500px;
+  padding: 30px 0;
+}
+
+.teacher-card {
+  min-width: 150px;
+}
+
+@media (max-width: 576px) {
+  .teacher-card {
+    min-width: 120px;
+  }
+
+  .teacher-info h4 {
+    font-size: 0.9rem;
+  }
+}
+
+/* Information section responsiveness */
+.info-numbers {
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+.info-card {
+  padding: 15px 40px;
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .info-numbers {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info-card {
+    width: auto;
+  }
+}
+
+/* Products section responsiveness */
+.products-container {
+  width: 95%;
+  margin-top: 60px;
+}
+
+.search-bar {
+  margin: 20px auto;
+  width: 90%;
+}
+
+.search-bar h1 {
+  font-size: 2.5rem;
+}
+
+.search-bar input {
+  width: 80%;
+}
+
+.product-list {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    margin: 20px auto;
+  }
+
+  .search-bar input {
+    width: 70%;
+  }
+
+  .tags {
+    flex-wrap: wrap;
+  }
+
+  .tag-btn {
+    margin-left: 0;
+  }
+}
+
+/* Modal responsiveness */
+.modal-content {
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .modal-actions {
+    flex-direction: column;
+  }
+}
+
+/* Login box responsiveness */
+.login-box {
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.login-container {
+  position: relative;
+  left: auto;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+.introduction {
+  position: relative;
+  width: 90%;
+  left: auto;
+  margin: 30px auto;
+  height: auto;
+  padding: 20px;
+}
+
+@media (min-width: 992px) {
+  .login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-container {
+    margin: 50px 0;
+    left: 5%;
+  }
+
+  .introduction {
+    margin-left: 5%;
+  }
+}
+
+/* Favorite section responsiveness */
+.favorite-container {
+  width: 95%;
+  left: 2.5%;
+}
+
+.favorite-container table {
+  display: block;
+  overflow-x: auto;
+}
+
+.favorite-container input[type="text"] {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+
+  .favorite-container td,
+  .favorite-container th {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .favorite-container .remove-btn,
+  .favorite-container .detail-btn {
+    margin-left: 5px;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+
+  .favorite-container img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 576px) {
+  .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    text-align: left;
+  }
+
+  .footer-brand .logo-img {
+    margin: 0 0 10px;
+  }
+
+  .footer-links ul,
+  .footer-social {
+    justify-content: flex-start;
+  }
+}
+
+/* Utility classes for responsive spacing */
+.px-sm-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-sm-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-sm-3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .px-md-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .px-md-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .px-md-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Responsive typography */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
 }

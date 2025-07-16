@@ -93,7 +93,7 @@ function Header() {
                 style={{
                   position: 'absolute',
                   top: '40px',
-                  right: '135px',
+                  right: '130px',
                   background: 'red',
                   color: 'white',
                   borderRadius: '50%',
