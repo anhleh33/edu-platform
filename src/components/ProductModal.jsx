@@ -88,7 +88,7 @@ function ProductModal({ product, onClose, favorites, onFavoriteChange }) {
                         className="btn-primary btn-cart"
                         onClick={addToCart}
                     >
-                        <i className="fa-solid fa-cart-plus"></i> <span>Thêm vào giỏ</span>
+                        <span><i className="fa-solid fa-cart-plus"></i></span>
                     </button>
                 </div>
             </div>
