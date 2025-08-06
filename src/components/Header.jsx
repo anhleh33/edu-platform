@@ -112,7 +112,7 @@ function Header() {
       ) : (
         <nav>
           <ul style={{ fontSize: '18px' }}>
-            <li onClick={directtoLogin} style={{ cursor: 'pointer' }}>
+            <li id='signin' onClick={directtoLogin} style={{ cursor: 'pointer' }}>
               Sign In
             </li>
             <li style={{ cursor: 'pointer' }}>Sign Up</li>
