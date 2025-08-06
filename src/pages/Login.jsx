@@ -8,34 +8,34 @@ function Login() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-   const handleLogin = async (e) => {
-  e.preventDefault();
+  const handleLogin = async (e) => {
+    e.preventDefault();
 
-  try {
-    const response = await fetch('https://edu-platform-3qfk.onrender.com/api/users');
-    if (!response.ok) {
-      toast.error('Không thể truy cập dữ liệu người dùng!');
-      return;
+    try {
+      const response = await fetch('https://edu-platform-3qfk.onrender.com/api/users');
+      if (!response.ok) {
+        toast.error('Không thể truy cập dữ liệu người dùng!');
+        return;
+      }
+
+      const users = await response.json();
+      const user = users.find(
+        (u) => u.email === email && u.password === password
+      );
+
+      if (user) {
+        localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('userEmail', user.email);
+        toast.success('Đăng nhập thành công!');
+        navigate('/');
+      } else {
+        toast.error('Email hoặc mật khẩu không đúng!');
+      }
+    } catch (error) {
+      console.error('Lỗi đăng nhập:', error);
+      toast.error('Đã xảy ra lỗi, vui lòng thử lại sau!');
     }
-
-    const users = await response.json();
-    const user = users.find(
-      (u) => u.email === email && u.password === password
-    );
-
-    if (user) {
-      localStorage.setItem('isLoggedIn', 'true');
-      localStorage.setItem('userEmail', user.email);
-      toast.success('Đăng nhập thành công!');
-      navigate('/');
-    } else {
-      toast.error('Email hoặc mật khẩu không đúng!');
-    }
-  } catch (error) {
-    console.error('Lỗi đăng nhập:', error);
-    toast.error('Đã xảy ra lỗi, vui lòng thử lại sau!');
-  }
-};
+  };
 
 
   return (
@@ -45,6 +45,7 @@ function Login() {
         <form onSubmit={handleLogin} className="login-form">
           <input
             style={{ marginBottom: '30px' }}
+            id='email'
             type="email"
             placeholder="Email"
             value={email}
@@ -53,6 +54,7 @@ function Login() {
           />
 
           <input
+            id='password'
             style={{ marginBottom: '5px' }}
             type="password"
             placeholder="Mật khẩu"
