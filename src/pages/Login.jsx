@@ -63,7 +63,7 @@ function Login() {
             required
           />
           <span>Quên mật khẩu</span>
-          <button type="submit" className='submit-btn'>Đăng nhập</button>
+          <button id='submit' type="submit" className='submit-btn'>Đăng nhập</button>
           <p>Hoặc</p>
           <div className="social">
             <button name='Facebook' className='social-btn'><i class="fa-brands fa-facebook"></i></button>
